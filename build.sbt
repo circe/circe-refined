@@ -42,9 +42,7 @@ lazy val refined = crossProject(JSPlatform, JVMPlatform, NativePlatform)
   )
   .jvmSettings()
   .jsSettings()
-  .nativeSettings(
-    // libraryDependencySchemes += "org.scalameta" %%% "munit-scalacheck" % VersionScheme.Always, // "early-semver",
-  )
+  .nativeSettings()
 
 ThisBuild / startYear := Some(2024)
 ThisBuild / developers := List(
