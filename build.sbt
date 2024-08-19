@@ -2,6 +2,7 @@ import sbtcrossproject.{ CrossType, crossProject }
 
 val Scala213V = "2.13.14"
 val Scala3V = "3.3.3"
+val Scala212V = "2.12.19"
 
 val circeVersion = "0.14.9"
 
@@ -14,7 +15,7 @@ ThisBuild / tlBaseVersion := "0.15"
 ThisBuild / tlCiReleaseTags := true
 
 ThisBuild / organization := "io.circe"
-ThisBuild / crossScalaVersions := List(Scala213V, Scala3V)
+ThisBuild / crossScalaVersions := List(Scala213V, Scala212V, Scala3V)
 ThisBuild / scalaVersion := Scala213V
 
 ThisBuild / githubWorkflowJavaVersions := Seq("8", "17").map(JavaSpec.temurin)
