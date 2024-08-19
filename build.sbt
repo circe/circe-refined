@@ -10,7 +10,7 @@ val munitScalacheckV = "1.0.0"
 val disciplineMunitVersion = "2.0.0"
 val refinedV = "0.11.2"
 
-ThisBuild / tlBaseVersion := "0.14"
+ThisBuild / tlBaseVersion := "0.15"
 ThisBuild / tlCiReleaseTags := true
 
 ThisBuild / organization := "io.circe"
