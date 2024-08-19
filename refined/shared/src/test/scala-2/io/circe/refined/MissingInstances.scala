@@ -38,7 +38,7 @@ import shapeless.ops.nat.ToInt
 trait MissingInstances {
   implicit lazy val eqThrowable: Eq[Throwable] = Eq.fromUniversalEquals
   implicit lazy val eqBigDecimal: Eq[BigDecimal] = Eq.fromUniversalEquals
-  
+
   implicit def eqRefArray[A <: AnyRef: Eq]: Eq[Array[A]] =
     Eq.by((value: Array[A]) => Predef.wrapRefArray(value).toVector)(
       cats.kernel.instances.vector.catsKernelStdEqForVector[A]
@@ -62,8 +62,8 @@ trait MissingInstances {
   implicit lazy val eqCNil: Eq[CNil] = Eq.instance((_, _) => false)
 
   implicit def eqHCons[H, T <: HList](implicit eqH: Eq[H], eqT: Eq[T]): Eq[H :: T] =
-    Eq.instance[H :: T] {
-      case (h1 :: t1, h2 :: t2) => eqH.eqv(h1, h2) && eqT.eqv(t1, t2)
+    Eq.instance[H :: T] { case (h1 :: t1, h2 :: t2) =>
+      eqH.eqv(h1, h2) && eqT.eqv(t1, t2)
     }
 
   implicit def eqCCons[L, R <: Coproduct](implicit eqL: Eq[L], eqR: Eq[R]): Eq[L :+: R] =

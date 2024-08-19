@@ -38,7 +38,7 @@ import io.circe.testing.CodecTests
 import org.scalacheck.Arbitrary
 import org.scalacheck.Gen
 import shapeless.Nat
-import shapeless.{Witness => W}
+import shapeless.{ Witness => W }
 
 class RefinedSuite extends CirceMunitSuite {
   implicit def refinedEq[T, P, F[_, _]](implicit ev: RefType[F]): Eq[F[T, P]] = {
