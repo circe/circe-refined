@@ -12,10 +12,10 @@ is cross-published for) from the main circe modules.
 ## Versioning
 
 This library releases at a different cadence than [Circe], any apparent relationship between the [Circe] version numbers
-and circe-optics version numbers are a coincidence and NOT intentional.  
+and circe-refined version numbers are a coincidence and NOT intentional.  
 Please use the following table for determining capability with the corresponding [Circe] versions.
 
-| Circe Optics Version | Circe  | Refined | Scala 2.12 | Scala 2.13 | Scala 3 | Scala JVM | Scala.JS | Scala-Native |
+| Circe Refined Version | Circe  | Refined | Scala 2.12 | Scala 2.13 | Scala 3 | Scala JVM | Scala.JS | Scala-Native |
 |----------------------|--------|---------|------------|-----------|---------|-----------|----------|--------------|
 | 0.15.x               | 0.14.x | 0.11.x  | ❌         | ✅        | ✅      | ✅        | ✅       | ✅           |
 
