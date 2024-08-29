@@ -17,7 +17,7 @@ Please use the following table for determining capability with the corresponding
 
 | Circe Refined Version | Circe  | Refined | Scala 2.12 | Scala 2.13 | Scala 3 | Scala JVM | Scala.JS | Scala-Native |
 |----------------------|--------|---------|------------|-----------|---------|-----------|----------|--------------|
-| 0.15.x               | 0.14.x | 0.11.x  | ❌         | ✅        | ✅      | ✅        | ✅       | ✅           |
+| 0.15.x               | 0.14.x | 0.11.x  | ✅         | ✅        | ✅      | ✅        | ✅       | ✅           |
 
 
 ## Contributors and participation
