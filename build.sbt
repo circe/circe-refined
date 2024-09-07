@@ -29,7 +29,7 @@ lazy val root =
 lazy val refined = crossProject(JSPlatform, JVMPlatform, NativePlatform)
   .in(file("refined"))
   .settings(
-    moduleName := "refned",
+    moduleName := "circe-refined",
     libraryDependencies ++= Seq(
       "io.circe" %%% s"circe-core" % circeVersion,
       "io.circe" %%% s"circe-testing" % circeVersion % Test,
